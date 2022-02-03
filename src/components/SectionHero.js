@@ -25,7 +25,7 @@ export default class SectionHero extends React.Component {
                                 {markdownify(_.get(section, 'content'))}
                             </div>
                             {_.get(section, 'actions') &&
-                            <p className="block-buttons">
+                            <p className="block-buttons" data-sb-field-path=".actions">
                                 {_.map(_.get(section, 'actions'), (action, actionIdx) => (
                                     <Action key={actionIdx} action={action} className="button white large"/>
                                 ))}
