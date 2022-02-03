@@ -9,7 +9,7 @@ export default class SectionHero extends React.Component {
     render() {
         const section = _.get(this.props, 'section');
         return (
-            <section id={_.get(section, 'section_id')} className="block hero-block bg-accent outer">
+            <section id={_.get(section, 'section_id')} className="block hero-block bg-accent outer" data-sb-field-path={this.props.annotationPrefix}>
                 <div className="inner">
                     <div className="grid">
                         {_.get(section, 'image') &&
