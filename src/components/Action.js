@@ -9,7 +9,7 @@ export default class Action extends React.Component {
         const {action, ...other} = this.props;
         const targetProps = _.get(action, 'new_window') ? {target: '_blank', rel: 'noopener'} : null;
         return (
-            <Link href={safePrefix(_.get(action, 'url'))} {...targetProps} {...other} data-sb-field-path=".label">
+            <Link href={safePrefix(_.get(action, 'url'))} {...targetProps} {...other}>
                 {_.get(action, 'label')}
             </Link>
         );
