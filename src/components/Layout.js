@@ -69,7 +69,7 @@ export default class Body extends React.Component {
                 </Head>
                 <div id="page" className={'site palette-' + _.get(this.props, 'config.palette')} data-sb-object-id={page.__metadata.id}>
                     <Header {...this.props} />
-                    <main id="content" className="site-content">
+                    <main id="content" className="site-content" >
                         {this.props.children}
                     </main>
                     <Footer {...this.props} />
