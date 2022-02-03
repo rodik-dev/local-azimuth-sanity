@@ -21,7 +21,7 @@ export default class SectionHero extends React.Component {
                             {_.get(section, 'title') &&
                             <h2 className="block-title underline" data-sb-field-path=".title">{_.get(section, 'title')}</h2>
                             }
-                            <div className="block-copy">
+                            <div className="block-copy" data-sb-field-path=".content">
                                 {markdownify(_.get(section, 'content'))}
                             </div>
                             {_.get(section, 'actions') &&
