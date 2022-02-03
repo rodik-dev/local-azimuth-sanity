@@ -23,7 +23,7 @@ export default class Post extends React.Component {
                                 </div>
                             )}
                             {_.has(page, 'subtitle') && (
-                                <div className="post-subtitle">
+                                <div className="post-subtitle" data-sb-field-path="subtitle">
                                     {_.get(page, 'subtitle')}
                                 </div>
                             )}
