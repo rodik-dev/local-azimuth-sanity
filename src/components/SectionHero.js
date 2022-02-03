@@ -14,7 +14,7 @@ export default class SectionHero extends React.Component {
                     <div className="grid">
                         {_.get(section, 'image') &&
                         <div className="cell block-preview">
-                            <img src={_.get(section, 'image')} alt={_.get(section, 'title')}data-sb-field-path=".image" />
+                            <img src={_.get(section, 'image')} alt={_.get(section, 'title')} data-sb-field-path=".image"/>
                         </div>
                         }
                         <div className="cell block-content">
