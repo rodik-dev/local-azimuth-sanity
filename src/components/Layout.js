@@ -67,7 +67,7 @@ export default class Body extends React.Component {
                     <meta name="google" content="notranslate" />
                     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i" rel="stylesheet"/>
                 </Head>
-                <div id="page" className={'site palette-' + _.get(this.props, 'config.palette')}>
+                <div id="page" className={'site palette-' + _.get(this.props, 'config.palette')} data-sb-object-id={pageMeta.id}>
                     <Header {...this.props} />
                     <main id="content" className="site-content">
                         {this.props.children}
