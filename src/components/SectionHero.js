@@ -27,7 +27,7 @@ export default class SectionHero extends React.Component {
                             {_.get(section, 'actions') &&
                             <p className="block-buttons" data-sb-field-path=".actions">
                                 {_.map(_.get(section, 'actions'), (action, actionIdx) => (
-                                    <Action key={actionIdx} action={action} className="button white large" data-sb-field-path={`.${actionIdx}`}/>
+                                    <Action key={actionIdx} action={action} className="button white large" data-sb-field-path={`.${actionIdx} .`}/>
                                 ))}
                             </p>
                             }
