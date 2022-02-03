@@ -27,7 +27,7 @@ export default class Page extends React.Component {
                                 </div>
                             )}
                             {_.has(page, 'content') && (
-                                <div className="post-content">
+                                <div className="post-content" data-sb-field-path="content">
                                     {markdownify(_.get(page, 'content'))}
                                 </div>
                             )}
