@@ -15,7 +15,7 @@ export default class Post extends React.Component {
                     <div className="inner-medium">
                         <article className="post post-full">
                             <header className="post-header">
-                                <h1 className="post-title" data-sb-field-path="title">{_.get(page, 'title')}</h1>
+                                3
                             </header>
                             {_.has(page, 'image') && (
                                 <div className="post-thumbnail">
